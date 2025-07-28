@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>vln-Leveling</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="battlepass-container" class="battlepass-container" style="display: none;">
+        <div class="battlepass-header"><h1>Valentine Battlepass</h1></div>
+        <div class="fullinside">
+            <div class="leftside">
+                <img src="./assets/valentine.png" alt="">
+                <div class="quests">
+                    <h3 style="font-size: 1.5rem;">Quests</h3>
+                        <div class="bgblack">
+                            <div class="blackbg">
+                                <h1 id="level">Level 5</h1>   
+                            </div>
+                            <div class="premiumtitle">
+                                <h1>Purchase Premium 200 Gold</h1> 
+                                <button class="purchasebtn" id="buyPremium">Buy</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="battlepass free">
+                    <h3>Free Battlepass</h3>
+               
+                    <div class="reward-container">
+                        <div class="reward-item premium">
+                            <img src="./assets/glass.png" alt="Item Image" />
+                            <div class="item-label">Item Name</div>
+                            <div class="item-count">x10</div>
+                        </div>
+                        <div class="reward-item premium">
+                            <img src="./assets/glass.png" alt="Item Image" />
+                            <div class="item-label">Item Name</div>
+                            <div class="item-count">x10</div>
+                        </div>
+                        <div class="reward-item premium">
+                            <img src="./assets/glass.png" alt="Item Image" />
+                            <div class="item-label">Item Name</div>
+                            <div class="item-count">x10</div>
+                        </div>
+                        <div class="reward-item premium">
+                            <img src="./assets/glass.png" alt="Item Image" />
+                            <div class="item-label">Item Name</div>
+                            <div class="item-count">x10</div>
+                        </div>
+                        <div class="reward-item premium">
+                            <img src="./assets/glass.png" alt="Item Image" />
+                            <div class="item-label">Item Name</div>
+                            <div class="item-count">x10</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="battlepass-progress">
+                        <span class="progress-text" id="battlepass-progress-text">0 / 0 XP</span>
+                    </div>
+                </div>
+                <div class="battlepass premium">
+                <h3>Premium Battlepass</h3>
+                <div class="reward-container">
+                        <div class="reward-item premium">
+                        <img src="./assets/glass.png" alt="Item Image" />
+                        <div class="item-label">Item Name</div>
+                        <div class="item-count">x10</div>
+                        </div>
+                        <div class="reward-item premium">
+                            <img src="./assets/glass.png" alt="Item Image" />
+                            <div class="item-label">Item Name</div>
+                            <div class="item-count">x10</div>
+                        </div>
+                        <div class="reward-item premium">
+                            <img src="./assets/glass.png" alt="Item Image" />
+                            <div class="item-label">Item Name</div>
+                            <div class="item-count">x10</div>
+                        </div>
+                        <div class="reward-item premium">
+                            <img src="./assets/glass.png" alt="Item Image" />
+                            <div class="item-label">Item Name</div>
+                            <div class="item-count">x10</div>
+                        </div>
+                        <div class="reward-item premium">
+                            <img src="./assets/glass.png" alt="Item Image" />
+                            <div class="item-label">Item Name</div>
+                            <div class="item-count">x10</div>
+                        </div>
+                </div>
+                </div>
+                <div id="pagination-container" class="pagination">
+                    <button class="button prev-page" onclick="changePage(-1)" >Previous</button>
+                    <button class="button next-page" onclick="changePage(1)" >Next</button>
+                </div>
+            </div>
+        </div>
+        <div  class="notify" id="notify"><img class="iconimg" src="./assets/valentine.png" alt="">Thats an notify</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
