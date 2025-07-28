@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+
+#levelUI {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  position: fixed;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  font-size: 18px;
+  width: 800px;
+}
+
+.level-container {
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: none;
+  flex-direction: row-reverse;
+  gap: 8px; 
+  z-index: 1000;
+}
+
+.level-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.level-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 12px;
+  background-color: #222;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  gap: 2px;
+}
+
+.progress-segment {
+  height: 100%;
+  background: linear-gradient(90deg, #878787, #5a5a5a);
+  transition: width 0.2s ease-in-out;
+  border-radius: 2px; 
+}
+
+.xp-text {
+  position: relative;
+  z-index: 10;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+.added-xp {
+  position: relative;
+  color: lightgreen;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px; 
+  text-shadow: 1px 1px 2px black;
+}
+
+.xp-info {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
+.xp-boost {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 250px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+
+.xp-boost-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.xp-boost-text {
+  color: #ffd700; 
+}
+
+.xp-boost-timer {
+  color: #ff4d4d; 
+}
+
+.hidden {
+  display: none;
+}
+
+
+.lvlicon {
+  height: 1.6rem;
+  width: 1.6rem;
+  vertical-align: middle;
+}
+
+#showLevel {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2rem;
+  color: white;
+}
+
+.levelcontainer {
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 3.5%;
+  right: 120px;
+  transform: translateY(-50%);
+  display: none;
+  flex-direction: row-reverse;
+  gap: 8px; 
+  z-index: 1000;
+}

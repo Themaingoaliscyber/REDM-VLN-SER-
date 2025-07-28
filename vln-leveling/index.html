@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>vln-Leveling</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="levelUI" class="hidden">
+        <div class="level-info">
+            <div class="level-circle" id="currentLevel">427</div>
+            <div class="progress-bar" id="xpProgressBar"></div>
+            <div class="level-circle" id="nextLevel">428</div>
+        </div>
+        <div class="xp-text" id="xpText">13633527 / 13646550</div>
+        <!-- Added XP element below xpText -->
+        <div class="added-xp" id="addedXp">+200 XP</div>
+    </div>
+    <div id="xpBoostUI" class="xp-boost hidden">
+        <div class="xp-boost-content">
+            <span class="xp-boost-text">XP Boost: <span id="xpBoostAmount">2x</span></span>
+            <span class="xp-boost-timer" id="xpBoostTimer">00:00</span>
+        </div>
+    </div>
+
+    <div id="levelDisplay" class="levelcontainer">
+        <div class="levelicon" id="showLevel">427</div>
+        <img src="level.png"
+         alt="lvl Icon" class="lvlicon">
+        
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
