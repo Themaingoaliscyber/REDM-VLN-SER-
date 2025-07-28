@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "rdr";
+  src: url("VacerSerifRegularPersonal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "rdr2";
+  src: url("kirstyrg.otf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "hepna";
+  src: url(../css/HapnaSlabSerif-Medium.ttf) format('truetype');
+}
+
+* {
+  font-family: hepna;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  user-select: none;
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 5px;
+}
+
+
+.categorybutons{
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.categbut{
+  background: url('../img/buttonb.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  opacity: 0.6;
+}
+
+.categbut:hover {
+  opacity: 1;
+
+}
+
+.rightdiv{
+  width: auto;
+  min-height: auto;
+  height: auto;
+  display: flex;
+  max-width: 20rem;
+  /* background-color: black; */
+  background: rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex-direction: column;
+}
+
+:root {
+  --scrollbar-track-color: #414141;
+  --scrollbar-thumb-color: #888888;
+}
+
+.rightdiv::-webkit-scrollbar {
+  width: 8px;
+}
+
+.rightdiv::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
+}
+
+.rightdiv::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: 5px; 
+}
+
+.rightdiv::-webkit-scrollbar-thumb:hover {
+  background-color: #666666; 
+}
+
+
+.jobcategory,
+.playerduty {
+  background-size: 100% 100%;
+  height: 1.7rem; 
+  width: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.jobcategory {
+  background: url('../img/bggold.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 2px solid rgba(255, 217, 0, 0.608);
+}
+
+.playerduty {
+  height: 1.5rem;
+  background: url('../img/dutyline.png');
+  background-repeat: no-repeat;
+  border: 2px solid rgba(179, 179, 179, 0.608);
+  background-size: 100% 100%;
+}
+
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.duty-icon {
+  width: 1.2rem; 
+  height: 1.2rem;
+  flex-shrink: 0; 
+}
+
+.char-name {
+  font-weight: bold;
+  color: white;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  max-width: 10rem; 
+  font-size: 1rem;
+}
+
+.job-grade {
+  color: rgb(200, 200, 200);
+  font-weight: bold;
+  flex-shrink: 0; 
+}
+
+.duty-icon {
+  font-size: 1.2rem;
+  color: rgb(187, 187, 187);
+  flex-shrink: 0;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.duty-icon:hover {
+  color: rgb(237, 194, 23); 
+  transform: scale(1.2); 
+  cursor: pointer; 
+}

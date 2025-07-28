@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>GANGS</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="create" style="display: none;">
+    <div class="header">إنشاء عصابة</div>
+    <div class="content">
+      <div class="leftside">
+        <div class="scrollable-content" style="padding-right: 40px;" >
+          <label for="sname">اسم العصابة</label>
+          <input placeholder="Quantum Quake" type="text" id="sname" name="sname">
+          <label for="sid">معرف الاعب (ID)</label>
+          <input placeholder="1" type="text" id="sid" name="sid">
+          <label for="sloc">موقع قائمة الزعيم</label>
+          <input placeholder="vector3(-0.0, 0.0, 0.0)" type="text" id="sloc" name="sloc">
+          <label for="item4">اسم العصابة في الخريطة</label>
+          <input placeholder="Valentine Gang" type="text" id="gname" name="gname">
+          <label for="item4">شكل العصابة</label>
+          <div class="item-content">
+            <button data-texture="1481032477" data-bgsource="skull" class="blipbutton"><img class="sprite" src="./assets/img/skullon.png" alt=""></button>
+            <button data-texture="1838354131" data-bgsource="miconon" class="blipbutton"><img class="sprite" src="./assets/img/micon.png" alt=""></button>
+            <button data-texture="-910004446" data-bgsource="tenton" class="blipbutton"><img class="sprite" src="./assets/img/tenticon.png" alt=""></button>
+          </div>
+          <label for="item4">لون الزون</label>
+          <div class="item-content">
+            <button data-texture="BLIP_MODIFIER_MP_COLOR_10" data-bgsource="redcolor" class="preivew"><img class="sprite" src="./assets/img/redcolor.png" alt=""></button>
+            <button data-texture="BLIP_MODIFIER_MP_COLOR_11" data-bgsource="greencolor" class="preivew"><img class="sprite" src="./assets/img/greencolor.png" alt=""></button>
+            <button data-texture="BLIP_MODIFIER_MP_COLOR_13" data-bgsource="bluecolor" class="preivew"><img class="sprite" src="./assets/img/bluecolor.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <div class="rightside">
+        <div class="righttitle">مشاهدة</div>
+          <div class="preivewblip">
+              <div class="previewname">Valentine Gang</div>
+          </div> 
+          <div class="righttitle">Radius</div>
+          <div class="preivewradius">
+          </div> 
+          <button class="submit-button">إنشاء عصابة</button>
+      </div>
+    </div>
+  </div>
+  <div id="managemenu" class="managemenu" style="display: none;">
+    <div class="leftmenu-header">
+      <h1 id="leftmenu-titler" class="leftmenu-title">إنشاء عصابة</h1>
+      <div class="scrollable-content">
+        <div class="item-contente"></div>
+        <div id="crate-box-section" class="crate-box-section">
+          <label id="cratecoord-label" for="cratecoord">التحكم في العصابة</label>
+          <button id="reposition-create" class="normal-button">تغيير مكان منيو الزعيم</button>
+          <button id="takeperm-create" class="normal-button">سحب صلاحيات</button>
+          <button id="givemission" class="normal-button">اعطاء مهمة</button>
+          <br>
+          <br>
+          <br>
+          <br>
+          <button id="destroy-slot" class="normal-button">حذف العصابة</button>
+          <br>
+        </div>
+      </div>
+    </div>
+    <button id="close-button" class="close-buttonl">إغلاق</button> <!-- Updated close button -->
+  </div>
+  <div id="permmenu" class="leftmenu" style="display: none;">
+    <div class="leftmenu-header">
+      <h1 id="leftmenu-titler" class="leftmenu-title">تعديل الصلاحيات</h1>
+      <div class="scrollableperm-content">
+      </div>
+    </div>
+    <button id="close-button" class="close-buttonl">إغلاق</button> <!-- Updated close button -->
+  </div>
+
+  <div id="invite" class="invite" style="display: none;">
+    <h1>دعوة للانظمام</h1>
+    <h2>انت مدعو للإنظمام الى <h2 id="ganginvite" style="color: green;">Valentine Gang</h2></h2>
+    <div class="invitecontainer">
+      <button class="inviteaccept" id="acceptinv">قبول</button>
+      <button class="invitedecline" id="declineinv">رفض</button>
+    </div>
+    <div style="margin-top: 6px;">للتحكم [ALT] اضفط</div> 
+  </div>
+
+  <div id="order" class="order" style="display: none;">
+    <h1 style="color: green;">برقية من الزعيم</h1>
+    <h2 id="ordermessage"></h2>
+
+  </div>
+
+  <div id="orders" class="orders" style="display: none;">
+    <div class="header">إعطاء مهمة</div>
+    <div class="scrollableorder-content">
+     </div>
+    <button class="orderlistclose" id="orderlistclose">إغلاق</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'rdr2';
+    src: url("./kirstyrg.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+* {
+    font-family: rdr2;
+}
+
+.music-player {
+    width: 34rem;
+    height: 20rem;
+    padding: 20px;
+    background: url(../img/bgPanel.png);
+    background-size: 100% 100%;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.music-player h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.url-input {
+    width: 80%;
+    padding: 8px;
+    border: 2px solid #f0d823;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    margin-top: 10px;
+}
+
+.controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.control-button {
+    background-color: #f0d823;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+}
+
+.seek-bar-container {
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+}
+
+.seek-bar {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    background: #888;
+    border-radius: 2px;
+}
+
+.seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #f0d823;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.volume-icon {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
